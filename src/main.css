@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+/* 
+.navbar {
+    @apply px-4 py-2 pt-4 flex justify-between flex-wrap
+  }
+  
+  @screen md {
+    .navbar {
+      @apply px-8
+    }
+  }
+  
+  .menuIcon {
+    @apply cursor-pointer self-center mr-2 block
+  }
+  
+  @screen md {
+    .menuIcon {
+      @apply hidden
+    }
+  }
+  
+  .menuItems {
+    @apply hidden w-full text-center
+  }
+  
+  @screen md {
+    .menuItems {
+      @apply flex flex-grow w-auto
+    }
+  }
+  
+  .header-hero {
+    @apply pb-20 px-4 py-4 flex flex-wrap justify-center
+  }
+  
+  @screen md {
+    .header-hero {  
+      @apply px-8
+    }
+  }
+  
+  .header-hero-span {
+    @apply px-4 py-2 text-textColor font-semibold text-sm capitalize
+  }*/
+  
+
+  .btn {
+    @apply w-full mx-auto py-3 px-8 rounded-full font-semibold my-1 
+  } 
+
+  .owl-theme .owl-nav{
+     margin-top: -40px !important
+  }
+ 
+  .owl-item > img {
+    @apply max-w-5xl inline-block !important
+  }
+  .owl-prev span{
+    @apply hidden 
+  }
+  .owl-next span{
+    @apply hidden
+  }
+  .owl-prev:before {
+    content: "\f060";
+    background: none;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: "FontAwesome";
+    color: #47465A;
+    font-size: 70px;  
+    left: 75px;
+    -webkit-text-stroke: 6px white;
+    text-stroke: 6px white;
+  }
+  
+  .owl-next:before {
+    content: "\f061";
+    background: none;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: "FontAwesome";
+    color: #47465A;
+    font-size: 70px;
+    right: 75px;
+    -webkit-text-stroke: 6px white;
+    text-stroke: 6px white;
+  }
+  @screen md {
+    .owl-prev:before {
+      left: 20px;
+      font-size: 60px;
+    }
+    .owl-next:before {
+      right: 20px;
+      font-size: 60px;
+    }
+  
+    .owl-carousel .owl-item img {
+      width: 80%
+    }
+ 
+  }
+  .timeline_r{
+    @apply rounded-full bg-secondColor w-20 h-20 relative float-left
+
+  }
+  .name_skill{
+    @apply capitalize text-headingColor text-2xl font-bold
+  }
+  .span_skill{
+    @apply capitalize text-xs text-secondColor ml-3 font-black
+
+  }
+  .paragraph{
+    @apply text-textColor tracking-wide text-lg font-light w-full
+  }
+  .timeline_r > span {
+    top:50%;
+    left: 50%;
+    @apply absolute text-white transform -translate-x-2/4 -translate-y-2/4
+    
+  }
+  .timeline::before{
+    content : "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #353535;
+    background: #47465A;
+    left: 38px;
+  }
+  .headroom--pinned {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    max-width: 100%;
+    box-shadow: 0px 1px 20px #66666638;
+    transition: .7s;
+  }
+
+  .headroom--unpinned {
+    display: none;
+  }
+  
+  .headroom--top {
+    box-shadow: none;
+    position: static;
+  }
+  
+  /* ===== DARK MODE ===== */
+  .dark-mode {
+    background-color: #0c0c0d;
+  }
+  
+  .dark-mode .navbar {
+    color: white;
+    background-color: #0c0c0d;
+  }
+  
+  .dark-mode .header-hero-span {
+    color: white;
+    background: #0d0c15;
+    border-radius: 50px;
+  }
+  
+  .dark-mode .header-hero-heading {
+    color: white;
+  }
+  
+  .dark-mode .headroom--pinned {
+    border-bottom: 1px solid #1b1b1b;
+    box-shadow: none;
+  }
+  
+  .dark-mode .ps-heading {
+    color: white;
+  }
+  
+  .dark-mode .rs-heading {
+    color: white;
+  }
+  
+  .dark-mode .timeline-content-title-primary {
+    color: white;
+  }
+  
+  .dark-mode .cs-heading {
+    color: white;
+  }
+  
+  .dark-mode input,
+  .dark-mode textarea {
+    background-color: #0c0c0d;
+    color: #a0aec0;
+  }
+  
+  .dark-mode input:hover,
+  .dark-mode textarea:hover {
+    border-color: #ffc200;
+  }
+.darkmode-toggle{
+  z-index: 9999;
+}
+
+.darkmode-toggle::before{
+  content: "\f186";
+  background: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "FontAwesome";
+  color: #fff;
+  font-size: 20px;
+  right: 15px;
+
+}
+
+@tailwind utilities;
+
